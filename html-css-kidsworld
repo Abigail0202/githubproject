@@ -1,0 +1,203 @@
+****************html code***************
+<link rel ="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Kids World</title> 
+       <link rel="icon" href="F:\python\class 1\html css project\smilyemoji.jpg">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    </head>
+    <body bgcolor="ash" style="color:white" >
+        <center>
+        <h1 class="navbar" >KIDS WORLD
+        </h1>
+        <div>
+        <h2 class="one">Best Entertaining Kids Game Shows Ever Made</h2>
+        <h3 class="one">Don't Miss Any OF Your Important Events . Here Are The Important Events You Have Registered For !</h3>
+        <hr>
+        <P style="color:rgb(161, 187, 17)">The concepts are designed to grab your little monster's attention. Watch together for double fun.</P>
+        <img src="kids.jpg">
+        <h2 style="color:red">Free Food | Free Entry | Pets are not allowed</h2>
+        </center>
+        <p>Children love playing games, whether offline or online, but how about letting them take a break from the regular games and making them watch the best game shows for kids instead, all while experiencing the thrill and excitement right from the comfort of their couch?TV programs are replete with innovative and amazing game shows that give children an extraordinary experience. These game shows are also an interesting medium of education and knowledge for its viewers.</p>
+        <center>
+
+            <h4>In Our Best Entertaining Kids Game Shows Ever Made ..Please Do Check! What Are the Competitions...We Are Going To Conduct In the Below Page</h4>
+            <img src="showcoverpage.webp"><br>
+             <h4 style="color:rgb(32, 127, 182)"> Lets Go To Our Competition Titles!<h4>
+             <img src="start.jpg">
+        
+             <h1>1. Family game night </h1>
+                <img src="Family-game-night.jpg.webp"b>
+                <h4>This enjoyable game show, hosted by Todd Newton, is the real-life version of classic board games.</h4>
+                <h4>Every episode has two families competing with each other. Each family has the opportunity to keep</h4>
+                <h4>all the cash and fabulous prizes collected along the way. Of course, the family that collects the most</h4>
+                <h4>cash wins the game. This fun game show entertains and inspires its young viewers to dust off</h4>
+                <h4>their board games and spend some quality time with family.</h4>
+            
+            <h1 >2. Pictureka </h1>
+                <img src="Pictureka.jpg.webp ">
+                <h4>The show is hosted by Cory Almeida and is based on a popular board game called Pictureka. In this</h4>
+                <h4>game show, two contestants compete with each other to locate hidden pictures of game characters</h4>
+                <h4>and other objects within the allotted time. This lively show tests contestants memory and thinking</h4>
+                <h4>skills and is great for young children and adults because it demonstrates healthy competition and</h4>
+                <h4>good sportsmanship.</h4>
+          
+
+            <h1>3.Baking impossible</h1>
+                <img src="Baking-impossible.jpg.webp">
+                <h4>This show is an American cooking competition hosted by Justin Willman. In this new competition</h4>
+                <h4>series, the most creative bakers are paired with innovative engineers and challenged to make</h4>
+                <h4>incredible creations. These creations should taste not only delicious but also withstand intense</h4>
+                <h4>engineering stress tests. The new concept is fun and engaging.</h4>
+
+            <h1>4.Double dare</h1>
+                 <img src="Double-dare.jpg.webp">
+                 <h4>Double dare has been Nickelodeon's longest-running game show. The original host was Marc</h4>
+                 <h4>Summers, but Liza Koshy presented the new version. This is one of the favorite game shows of</h4>
+                 <h4>many children. It features two teams of two kid contestants each, competing for prizes by answering</h4>
+                 <h4>trivia questions and performing messy physical stunts. The show is lively, colorful, and a joy to</h4>
+                 <h4>watch.</h4>
+               
+            <h1>5. Craftopia</h1>
+                <img src="Craftopia.jpg.webp">
+                <h4>Craftopia is a great competitive show for all craft lovers out there! It is hosted by Lauren Riihimaki,</h4>
+                <h4>better known by her stage name LaurDIY. Children of age 9 to 15 give life to their imagination by</h4>
+                <h4>making out-of-the-world DIY creations in a colorful and magical studio. This crafty show is a great</h4>
+                <h4>source of entertainment for the entire family.</h4>
+          
+                </center>
+                <hr>
+                
+                <nav>
+                <center>
+                    <p style="color:blueviolet" >Family game night is a show that won the hearts of many kids as it brought board games into real life.</p>
+                <img src="F:\python\class 1\html css project\world.jpg">
+                <h1 id="one" >
+                    For Registration 👉<button class="add-button" id="add-popup-button">
+                        <a href="file:///F:/python/class%201/html%20css%20project/Register.html" style="color: darkpink;">Register</a>
+                    </button>
+                    
+                </h1>
+            
+            </nav>
+                <hr>
+            </center>
+
+    </body>
+</html>
+************************ css code  *****************
+body{
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    background-color:  #fd6556;
+    color:blanchedalmond;
+    padding:15px
+}
+ul{
+    margin-right:70%;
+}
+li{
+    color:rgb(43, 194, 32);
+    cursor:pointer;
+}
+li.hover{
+    color:white;
+}
+h1{
+    color:aqua;
+}
+h2{
+    color:pink;
+}
+h4{
+    color:burlywood;
+}
+div{
+    color:rgb(138, 43, 201);
+}
+#one{
+    color:black;
+    background-image:world.jpg;
+}
+.two{
+    
+}
+************ Register code *************
+               <link rel ="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+       <title> Register</title>
+       <link rel="icon" href="F:\python\class 1\html css project\smilyemoji.jpg">
+    </head>
+        <body bgcolor="grey" style="color:white" >
+            <center>
+            <h1 >KIDS WORLD
+            </h1>
+            <div>
+            <h2 class="one">Best Entertaining Kids Game Shows Ever Made</h2>
+            <h3 class="one">Don't Miss Any OF Your Important Events . Here Are The Important Events You Have Registered For !</h3>
+            <hr>
+            <P style="color:rgb(165, 22, 134)">The concepts are designed to grab your little monster's attention. Watch together for double fun.</P>
+            <img src="kghjd.png">
+            <h2 style="color:rgb(109, 35, 35)">Free Food | Free Entry | Pets are not allowed</h2>
+            </center>
+            <hr>
+            <center>
+                <h1>Registration Form</h1>
+            <form>
+                <table>
+                        <tr>
+                            <td>Name</td><td><input type="text" placeholder="Enter Your Name"></td>
+                        </tr>
+                        <tr>
+                            <td>Age</td><td><input type="number" placeholder="Enter Your Age"></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>
+                                <input type="radio" name="Gender">Male
+                                <input type="radio" name="Gender">Female
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Email</td><td><input type="email" placeholder="Enter Your Email"></td>
+                        </tr>
+                        <tr>
+                            <td>Register Your Game</td>
+                            <td>
+                                <select>
+                                    <option>---Register Your Game---</option>
+                                    <option>Family Game Night</option>
+                                    <option>Pictureka</option>
+                                    <option>Baking Impossible</option>
+                                    <option>Double Dare</option>
+                                    <option>Craftopia</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Upload Your Photo</td>
+                            <td><input type="file"></td>
+                        </tr>
+                            <tr>
+                                <td><input type="Reset"></td>
+                                <td><input type="Submit"></td>
+                            </tr>
+                      
+                    </table>
+            </form>
+                    <hr>
+                    <div>Back to 🏠 click 👉<button class="add-button" id="add-popup-button">
+                        <a href="file:///F:/python/class%201/html%20css%20project/ABI.html" style="color: rgb(207, 38, 38);">Home</a>
+                    </button>
+                    <hr>
+            </center>
+    </body>
+</html>
+
+LINK:file:///F:/python/class%201/html%20css%20project/ABI.html
