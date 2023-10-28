@@ -1,0 +1,208 @@
+**************** html code ***************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="navbar">
+        <h1>Booksky</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h5>Robert</h5>
+            <p>Rich Dad Poor Dad is about Robert Kiyosaki (author) and his two dads—his real father (poor dad) and the father of his best friend (rich dad)—and the ways in which both men shaped his thoughts about money and investing. The book explodes the myth that you do not need to earn a high income to become rich</p>            
+        </div>  
+    </div>
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea  placeholder="Short Description" id="book-description-input"></textarea>
+            <button id="add-book">ADD</button>
+            <button id="cance-popup">CANCEL</button>
+        </form>
+    </div>
+
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
+
+************  Css **************
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    background-color:  #fd6556;
+    padding:10px;
+}
+.container{
+    padding: 10px;
+}
+.book-container{
+    padding: 15px;
+    width: 25%;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    margin:30px;
+    display: inline-block;
+    vertical-align: top;
+}
+.book-container h2{
+    color:  #fd6556;
+}
+.book-container button{
+    background-color: #fd6556;
+    color: black;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    margin-top: 10px;
+}
+.add-button{
+    background-color: #fd6556;
+    color: black;
+    border-radius: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 40px;
+    border: none;
+    margin-top: 10px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.popup-overlay{
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.popup-box{
+    background-color: #fd6556;
+    width: 20%;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    z-index: 2;
+    display: none;
+}
+.popup-box input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border-bottom:solid black 2px;
+} 
+.popup-box textarea{
+    background-color: transparent;
+    width:100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border: solid black 2px;
+}
+.popup-box input::placeholder
+{
+    color: black;
+}
+.popup-box textarea::placeholder
+{
+    color: black;
+}
+.popup-box button{
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    margin: 5px;
+    color: white;
+}
+
+.popup-box input:focus{
+    outline: none;
+}
+
+.popup-box textarea:focus{
+    outline: none;
+}
+
+************* javascript *********
+//selecting popup box , popup overlay button 
+var popupoverlay =document.querySelector(".popup-overlay")
+var popupbox=document.querySelector(".popup-box")
+var addpopupbutton = document.getElementById("add-popup-button")
+
+addpopupbutton.addEventListener("click",function(){
+    popupoverlay.style.display="block"
+    popupbox.style.display="block"
+})
+
+//select cancel button
+var cancelpopup=document.getElementById("cancel-popup")
+
+cancelpopup.addEventListener("click",function(event){
+    event.preventDefault()
+    popupoverlay.style.display="none"
+    popupbox.style.display="none"
+})
+
+//select container,add-book,book-title-input,book-author-input,book-description-input
+
+var container =document.querySelector(".container")
+var addbook =document.getElementById(".add-book")
+var booktitleinput =document.getElementById(".book-title-input")
+var bookauthorinput =document.getElementById(".book-author-input")
+var bookdescriptioninput =document.getElementById(".book-description-input")
+
+addbook.addEventListener("click",function(event){
+    event.preventDefault()
+    var div=document.createElement("div")
+    div.setAttribute("class","book-container")
+    div.innerHTML=`<h2>${booktitleinput}</h2>
+    <p>${bookdescriptioninput.value}</p>
+    <button onclick="deletebook(event)">Delete</button>`
+    container.append(div)
+    popupoverlay.style.display="none"
+    popupbox.style.display="none"
+
+})
+
+function deletebook(event)
+{
+    event.target.parentElement.remove()
+}
