@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booksky</title>
+    <link rel="icon" href="F:\python\class 1\html css project\smilyemoji.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -184,10 +185,10 @@ cancelpopup.addEventListener("click",function(event){
 //select container,add-book,book-title-input,book-author-input,book-description-input
 
 var container =document.querySelector(".container")
-var addbook =document.getElementById(".add-book")
-var booktitleinput =document.getElementById(".book-title-input")
-var bookauthorinput =document.getElementById(".book-author-input")
-var bookdescriptioninput =document.getElementById(".book-description-input")
+var addbook =document.getElementById("add-book")
+var booktitleinput =document.getElementById("book-title-input")
+var bookauthorinput =document.getElementById("book-author-input")
+var bookdescriptioninput =document.getElementById("book-description-input")
 
 addbook.addEventListener("click",function(event){
     event.preventDefault()
